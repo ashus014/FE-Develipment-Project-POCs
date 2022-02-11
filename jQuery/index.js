@@ -22,6 +22,10 @@ $("button").click(function(){
 //     console.log(event.key);
 // });
 
-$(document).keypress(function(){
-    $("h1").text(event.key);
+// $(document).keypress(function(){
+//     $("h1").text(event.key);
+// });
+
+$("button").on("click", function(){
+    $("h1").hide();
 });
