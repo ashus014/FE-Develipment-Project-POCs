@@ -19,11 +19,12 @@ app.get("/", function(req, res){
 
             const temp = weatherData.main.temp;
             console.log(temp);
+
+            res.write("<p>Hi, this is Ashu Singh Weather Forecast<p>");
+            res.write("<h1>The temperature in Chennai is " + temp + " degrees Celcius</h1>");
+            res.send();
         });
-
     });
-
-    res.send("Server is up and running");
 });
 
 app.listen(3000, function(){
